@@ -48,3 +48,19 @@
     width:80%;
     margin: 0 auto;
 }
+
+.service-card-description{
+    display:none;
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: inherit;
+    height: inherit;
+    opacity: 0.8;
+    background-color: aqua;
+}
+.describe-it{
+    opacity: 0.5;
+
+}

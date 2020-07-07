@@ -43,30 +43,71 @@
                 <h2>WHAT WE DO</h2>
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <img src="assets/services_icons/design_icon.png" class="card-img-top" alt="">
+                        <div class="col-lg-4 col-sm-12 col-xs-12 col-md-12 service-card" id="design-card">
+                            <div class="card border-0">                                
                                 <div class="card-body">
-                                    <h5 class="card-title">DESIGN</h5>
+                                    <img src="assets/services_icons/design_icon.png" class="img-thumbnail" alt="">
+                                    <p>
+                                        <h5 class="card-title">DESIGN</h5>
+                                    </p>
+
+                                    <div id="design-desc" class="service-card-description">
+                                        <p>
+                                            <h3>Design</h3>
+                                        </p>
+                                        <p>
+                                            Our design practice offers a full range of services 
+                                            including brand strategy, interaction and visual design and user experience testing.
+                                            Throughout your project, our designers create and implement visual design and workflows, solicit user 
+                                            feedback and work with you to make sure what gets built is what is needed.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <img src="assets/services_icons/dev_icon.png" class="card-img-top" alt="">
+                        <div class="col-lg-4 col-sm-12 col-xs-12 col-md-12 service-card"  id="dev-card">
+                            <div class="card border-0">
                                 <div class="card-body">
-                                    <h5 class="card-title">DESIGN</h5>
+                                    <img src="assets/services_icons/dev_icon.png" class="img-thumbnail" alt="">
+                                    <p>
+                                        <h5 class="card-title">DEVELOPMENT</h5>
+                                    </p>
+
+                                    <div id="dev-desc" class="service-card-description">
+                                        <p>
+                                            <h3>Development</h3>
+                                        </p>
+                                        <p>                                            
+                                            All engineers are fluent in the latest enterprise, mobile and web development technologies.
+                                            They collaborate with your team to write, and improve code on a daily basis,
+                                            using proven practices such as test-driven development and pair programming.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
 
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <img src="assets/services_icons/product_icon.png" class="card-img-top" alt="">
+                        <div class="col-lg-4 col-sm-12 col-xs-12 col-md-12 service-card" id="pmd-card">
+                            <div class="card border-0">
                                 <div class="card-body">
-                                    <h5 class="card-title">DESIGN</h5>
+                                    <img src="assets/services_icons/product_icon.png" class="img-thumbnail" alt="">
+                                    <p>
+                                        <h5 class="card-title">PRODUCT MANAGEMENT</h5>
+                                    </p>
+
+                                    <div id="pmd-desc" class="service-card-description">
+                                        <p>
+                                            <h3>Product Management</h3>
+                                        </p>
+                                        <p>                                            
+                                            Planning and development is iterative. 
+                                            Because we are constantly coding and testing, 
+                                            the products we build are always ready to go live. 
+                                            This iterative process allows for changes as business requirements evolve.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -179,8 +220,10 @@
         <script>
             // passing the dollar sign as a parameter to avoid the dollar sign conflict
             jQuery(function($){
-                var column = $($("#porfolio_images").html());
-                var portfolio_manifest = "assets/porfolio/portfolio_manifest.json";
+                
+                $(".service-card").hover(function(){
+                    $(this).find(".service-card-description").toggle();
+                });
             });
         </script>
     </body>
