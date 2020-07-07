@@ -1,0 +1,12 @@
+#masthead{
+    background: url("../assets/backgrounds/h_img.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    color: white;
+    padding-top:100px;
+    height:500px;
+}
+.section-one-content{
+
+}
